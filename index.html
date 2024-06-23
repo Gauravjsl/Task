@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div id="nav">
+        <div class="image-container">
+            <span id="logo"><img src="./logo.png" alt="logo" width="300px" /></span>
+        </div>
+       <div class="icons dropdown">
+          <a href="#"><i class="fa-solid fa-house icon"></i></a>
+          <a href="#"><i class="fa fa-binoculars bg-blue icon"></i></a>
+          <a href="#"><i class="fas fa-tools icon"></i></a>
+          <a href="#"><i class="fa fa-bell icon"></i></a>
+          <a class="profile" href="#"><i></i></a>
+          <a href="#"><i class="fas fa-ellipsis-v icon"></i></a>
+        </div>
+      </div>
+      <!-- notice board -->
+      <div id="notice-board" class="notice" style="width: 90px; height: 480px">
+        <div id="board-item">
+          <p><i id="cancel" class="fa-solid fa-xmark cancel"></i></p>
+          <div class="noticebarItems">
+            <div class="items-height">
+              <p>N</p>
+              <p>o</p>
+              <p>t</p>
+              <p>i</p>
+              <p>c</p>
+              <p>e</p>
+            </div>
+            <br>
+            <div class="items-height">
+              <p>B</p>
+              <p>o</p>
+              <p>a</p>
+              <p>r</p>
+              <p>d</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- sidebar right -->
+      <div
+        id="sidebar-right"
+        class="sidebar"
+        style="width: 90px; height: 480px"
+      >
+        <p class="Board">
+          <i id="arrowright" class="fa-solid fa-arrow-right arrowright"></i>
+        </p>
+        <div class="sidebarItems">
+          <span class="sidebarItem" style="cursor: pointer;">1</span>
+        </div>
+      </div>
+
+      <!-- sidebar left -->
+      <div id="sidebar-left" class="sidebar expanded">
+        <p class="Board">
+          Journey Board
+          <i id="arrowleft" class="fa-solid fa-arrow-left arrowleft"></i>
+        </p>
+        <ul>
+          <li class="nav-item">Technical Project Management</li>
+          <li>ThreadBuild</li>
+          <li>Structure you pointers</li>
+          <li>4SA Method</li>
+        </ul>
+      </div>
+
+      <div id="section1">
+        <h3 style="color: blue; font-weight: bolder; margin-left: 150px;">
+          TECHNICAL PROJECT MANAGEMENT
+        </h3>
+        <button
+          style="
+            color: white;
+            background-color: blue;
+            border-radius: 10px;
+            border: none;
+            margin-left: 100px;
+          "
+        >
+          Submit Task
+        </button>
+      </div>
+
+      <div id="section2">
+        <h4
+          id="sectionheader"
+          style="font-weight: bold; padding-top: 10px"
+        ></h4>
+        <p id="sectiondescription"></p>
+      </div>
+      <div id="cards"></div>
+
+      <div class="logos">
+        <a href="#"><i class="fa-solid fa-question lowerlogos"></i></a>
+        <a href="#"><i class="fa-brands fa-teamspeak lowerlogos"></i></a>
+        <a href="#"><i class="fa-solid fa-calculator lowerlogos"></i></a>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
